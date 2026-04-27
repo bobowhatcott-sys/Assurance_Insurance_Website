@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assurance Insurance Agency provides reliable personal and business insurance solutions with expert guidance and responsive support."
+    />
+    <title>Assurance Insurance Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="#home">Assurance Insurance Agency</a>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="hero-content">
+          <p class="eyebrow">Trusted Coverage. Personalized Service.</p>
+          <h1>Insurance solutions that protect what matters most.</h1>
+          <p>
+            We help individuals, families, and businesses find clear, dependable
+            coverage tailored to their needs.
+          </p>
+          <a class="btn" href="#contact">Request a Consultation</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Personal Insurance</h3>
+              <p>
+                Home, auto, renters, and life insurance options to safeguard
+                your family and assets.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Business Insurance</h3>
+              <p>
+                Comprehensive commercial coverage including liability, property,
+                workers' compensation, and more.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Policy Reviews</h3>
+              <p>
+                Annual checkups to ensure your policies remain aligned with your
+                goals and current risks.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="about">
+        <div class="container">
+          <h2>Why Assurance?</h2>
+          <p>
+            Our team combines industry expertise with a client-first approach.
+            We explain options clearly, advocate for your best interests, and
+            respond quickly when you need support.
+          </p>
+          <ul class="highlights">
+            <li>Independent guidance from licensed professionals</li>
+            <li>Fast, straightforward quoting process</li>
+            <li>Ongoing support for claims and renewals</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact">
+          <h2>Get in Touch</h2>
+          <p>
+            Ready to review your current policy or explore new coverage? Contact
+            our team today.
+          </p>
+          <div class="contact-info">
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@assuranceagency.com</p>
+            <p><strong>Hours:</strong> Mon-Fri, 9:00 AM-5:00 PM</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> Assurance Insurance Agency. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
