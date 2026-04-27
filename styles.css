@@ -6,6 +6,7 @@
   --muted: #52606d;
   --border: #d7e1ea;
   --surface: #ffffff;
+  --focus: #f5b700;
 }
 
 * {
@@ -27,6 +28,22 @@ body {
 .container {
   width: min(1120px, 92%);
   margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  background: #fff;
+  color: var(--primary-dark);
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
 }
 
 .hero {
@@ -107,7 +124,7 @@ h2 {
   font-weight: 700;
 }
 
-.btn-solid {
+.btn-light {
   background: #fff;
   color: var(--primary-dark);
 }
@@ -115,6 +132,11 @@ h2 {
 .btn-outline {
   border-color: #ffffff;
   color: #ffffff;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
 }
 
 .section {
@@ -222,8 +244,12 @@ footer {
   padding: 2.4rem 0 1rem;
 }
 
-footer h3,
-footer h4 {
+.footer-title {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+footer h3 {
   margin-top: 0;
   color: #fff;
 }
@@ -239,6 +265,15 @@ footer h4 {
   margin-top: 1rem;
   padding-top: 1rem;
   font-size: 0.95rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
 }
 
 @media (max-width: 860px) {
