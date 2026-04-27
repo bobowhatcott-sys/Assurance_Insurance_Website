@@ -1,0 +1,145 @@
+:root {
+  --primary: #0f4c81;
+  --primary-dark: #0a3458;
+  --accent: #e8f1f8;
+  --text: #1f2a35;
+  --muted: #526272;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(130deg, var(--primary-dark), var(--primary));
+  color: #fff;
+  padding: 1.25rem 0 4rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-content {
+  margin-top: 4rem;
+  max-width: 700px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #cfe5f7;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #fff;
+  color: var(--primary-dark);
+  padding: 0.75rem 1.3rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.card {
+  border: 1px solid #dce6ef;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.alt {
+  background: var(--accent);
+}
+
+.highlights {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.contact {
+  max-width: 800px;
+}
+
+.contact-info p {
+  margin: 0.25rem 0;
+}
+
+footer {
+  background: #0c1f31;
+  color: #cdd9e4;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    margin-top: 2.5rem;
+  }
+}
